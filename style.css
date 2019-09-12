@@ -1,0 +1,58 @@
+html, body, .container {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.7em;
+    word-break: keep-all; 
+}
+
+.axisLabel {
+    font-size: 1.3em;
+}
+
+.dot {
+    opacity: .5;
+}
+
+.d3-tip {
+    font-size: 1em;
+    font-weight: light;
+    /* prevent CJK word from breaking in the middle */
+    word-break: keep-all; 
+}
+
+.art {
+    opacity: 1;
+}
+
+g.legend {
+  background-color: #eee; 
+}
+
+@media (max-width : 450px) {
+    .axisLabel {
+        font-size: 11px;
+    }
+}
+
+path.regressionLine {
+    stroke: black;
+    fill: none;
+    stroke-width: 1.2;
+    stroke-dasharray: 3, 5;
+}
+
+#regression-line-label {
+ text-align: right; 
+ font-size: 0.8em;
+ margin-top: 0;  
+}
